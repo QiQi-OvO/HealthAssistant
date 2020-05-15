@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.healthassistant.RegisterActivity"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="姓名"></EditText>
+    <EditText
+        android:id="@+id/reg_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="帐号"></EditText>
+    <EditText
+        android:id="@+id/reg_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码"
+        android:inputType="textPassword"></EditText>
+    <EditText
+        android:id="@+id/reg_confirmpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="确认密码 "
+        android:inputType="textPassword"></EditText>
+    <EditText
+        android:id="@+id/reg_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="联系电话"></EditText>
+    <RadioGroup
+        android:id="@+id/reg_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/reg_register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"></Button>
+
+</LinearLayout>
